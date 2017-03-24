@@ -1,5 +1,4 @@
 document.getElementById('uploader').addEventListener('change', function (e) {
-  console.log(e);
   const file = e.target.files && e.target.files[0];
   const token = 'yourToken';
   const headers = {
@@ -8,8 +7,10 @@ document.getElementById('uploader').addEventListener('change', function (e) {
     'Authorization': "UpToken " + token,
   };
   const fileSize = file.size;
+
+  // start
   imageUpload({
-    path: 'http://up.qiniu.com/putb64/' + file.size,
+    path: 'http://upload.qiniu.com/putb64/' + fileSize,
     file: file,
     headers: headers,
     beforeUpload: function () {

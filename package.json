@@ -1,6 +1,6 @@
 {
   "name": "image-upload",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Another Small And Simple JavaScript Image Uploader Library",
   "main": "/dist/image-upload.js",
   "scripts": {
